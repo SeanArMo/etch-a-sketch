@@ -23,8 +23,8 @@ let cells = document.querySelectorAll('.cell');
 function setCellListener () {
     cells.forEach(cell => {
         cell.addEventListener('mouseover', (e) => {
-            let path = e['path'];
-            let targetCell = path[0];
+            let path = event.composedPath();
+            targetCell = path[0];
             targetCell.setAttribute('id', 'filled')
         })
     });
