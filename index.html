@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Etch a Sketch!</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <script src="./script.js" defer></script>
+    <h1 class="header">Etch a Sketch</h1>
+
+    <div class="content">
+
+        <div class="settings">
+            <h1 class="header">Settings</h1>
+            <button id="clear">Clear</button>
+            <h2 class="header two">Grid Dimensions</h2>
+            <div class="slider">
+                <input id="size" type="range" min="16" max="100" value="16" oninput="rangeValue.innerText = this.value">
+                <p id="rangeValue">16</p>
+            </div>
+        </div>
+
+        <div class="grid-border">
+            <div class="grid">
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
